@@ -22,5 +22,5 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true })
 vim.keymap.set('n', '<leader>to', '<cmd>tabnew<CR>',    { desc = 'Open new tab' })                   -- Open new tab with <leader>to
 vim.keymap.set('n', '<leader>tx', '<cmd>tabclose<CR>',  { desc = 'Close current tab' })              -- Close tab with <leader>tx
 vim.keymap.set('n', '<leader>tn', '<cmd>tabn<CR>',      { desc = 'Go to next tab' })                 -- Go to next tab with <leader>tn
-vim.keymap.set('n', '<leader>tp', '<cmd>tabp<CR>',      { desc = 'Go to previous tab' })             -- Go to previous tab with <leader>tp
+vim.keymap.set('n', '<leader>tk', '<cmd>tabp<CR>',      { desc = 'Go to previous tab' })             -- Go to previous tab with <leader>tp
 vim.keymap.set('n', '<leader>tf', '<cmd>tabnew %<CR>',  { desc = 'Open current file on a new tab' }) -- Open current file on a new tab
