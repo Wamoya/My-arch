@@ -1,0 +1,17 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Coloring aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias tree='tree -C'
+
+# Prompt customization
+PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ '
+
+# Load custom aliases
+source ~/.bash_aliases
