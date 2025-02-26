@@ -1,0 +1,13 @@
+neofetch
+neovim
+tree
+bat
+git
+wget
+openssh
+base-devel
+iverilog
+gtkwave
+
+# Install yay manually
+# - Install win32yank through yay
