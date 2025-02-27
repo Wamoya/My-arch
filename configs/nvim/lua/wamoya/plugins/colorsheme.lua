@@ -5,7 +5,7 @@ return {
         -- Load colorscheme
         vim.cmd('colorscheme kanagawa')
         
-        -- [[ Transparent ]]
+        -- [[ Config for transparent background ]]
         --vim.cmd 'highlight Normal guibg=NONE ctermbg=NONE'
 
         --vim.cmd 'highlight LineNr guibg=NONE ctermbg=NONE'

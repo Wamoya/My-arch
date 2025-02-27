@@ -11,6 +11,7 @@ return {
             { '<leader>t', group = '[T]ab'           },
             { '<leader>e', group = 'File [E]xplorer' },
             { '<leader>n', group = '[N]o'            },
+            { '<leader>f', group = '[F]uzzy finder'  },
         }
     }
 }

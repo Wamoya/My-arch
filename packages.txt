@@ -11,3 +11,7 @@ gtkwave
 
 # Install yay manually
 # - Install win32yank through yay
+ripgrep
+chafa
+luarocks
+fd
