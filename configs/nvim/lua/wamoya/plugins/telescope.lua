@@ -31,6 +31,7 @@ return {
         vim.keymap.set('n', '<leader>fn', function()
             require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config' }
         end, { desc = 'Search Neovim files' })
-        vim.keymap.set('n', '<leader>fk', '<cmd>Telescope grep_string<CR>', { desc = 'Live grep string under cursor' })
+        vim.keymap.set('n', '<leader>fk', require('telescope.builtin').keymaps, { desc = 'Fuzzy find keymaps' })
+        vim.keymap.set('n', '<leader>fs', '<cmd>Telescope grep_string<CR>', { desc = 'Live grep string under cursor' })
     end,
 }
