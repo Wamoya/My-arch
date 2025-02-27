@@ -1,6 +1,7 @@
 neofetch
 neovim
-tree
+#tree
+exa
 bat
 git
 wget
@@ -15,4 +16,3 @@ ripgrep
 chafa
 luarocks
 fd
-eza
