@@ -2,7 +2,7 @@
 vim.g.mapleader = ' '
 
 -- [[ Editor ]]
-vim.keymap.set('n', '<leader>nh', '<cmd>nohlsearch<CR>', { desc = 'Clear highlights on search.'}) -- Clear highlights on search with <leader>nh
+vim.keymap.set('n', '<leader>nh', '<cmd>nohlsearch<CR>', { desc = 'Clear highlights on search'}) -- Clear highlights on search with <leader>nh
 
 
 -- [[ Window management ]]
