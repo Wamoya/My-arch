@@ -9,7 +9,10 @@ alias opn="~/repos/bash_scripts/opn.sh"
 
 
 # Command aliases
+alias ls='exa'
+alias tree='exa -T'
 alias treee='exa -TDL 2'
+
 
 
 # Common directories
