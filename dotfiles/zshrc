@@ -1,0 +1,18 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/wamoya/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Prompt customization
+#PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ '
+PS1="┌[%F{34}%n@%m%f %F{69}%~%f %T] %N"$'\n'"└─%# " #wtf
+
+source ~/.zsh_aliases

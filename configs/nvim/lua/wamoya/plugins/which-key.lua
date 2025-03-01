@@ -7,11 +7,13 @@ return {
     end,
     opts = {
         spec = { -- Document existing chains
-            { '<leader>s', group = '[S]plit'         },
-            { '<leader>t', group = '[T]ab'           },
-            { '<leader>e', group = 'File [E]xplorer' },
-            { '<leader>n', group = '[N]o'            },
-            { '<leader>f', group = '[F]uzzy finder'  },
+            --{ '<leader>s', group = '[S]plit'         },
+            { '<leader>t',  group = '[T]ab'           },
+            { '<leader>e',  group = 'File [E]xplorer' },
+            { '<leader>o',  group = '[O]ptions'       },
+            { '<leader>on', group = '[O]ption [N]o'   },
+            { '<leader>s',  group = '[S]earch'        },
+            { '<leader>c',  group = '[C]olorcheme'    },
         }
     }
 }

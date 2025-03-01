@@ -9,7 +9,7 @@ alias opn="~/repos/bash_scripts/opn.sh"
 
 
 # Command aliases
-alias ls='exa -g --smart-group'
+alias ls='exa -g'
 alias tree='exa -T'
 alias treee='exa -TDL 2'
 

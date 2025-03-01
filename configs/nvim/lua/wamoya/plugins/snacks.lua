@@ -1,10 +1,7 @@
 return {
-    'folke/snacks.nvim',
+    "folke/snacks.nvim",
     opts = {
         dashboard = {
-            -- your dashboard configuration comes here
-            -- or leave it empty to use the default settings
-
             sections = {
                 { section = "header" },
                 { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
