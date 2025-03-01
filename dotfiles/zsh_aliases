@@ -7,6 +7,10 @@ alias digi='digitalize'
 
 alias opn="~/repos/bash_scripts/opn.sh"
 
+alias duu="~/repos/bash_scripts/duu.sh"
+
+alias gstatus="~/repos/bash_scripts/gstatus.sh"
+
 
 # Command aliases
 alias ls='exa -g'
@@ -23,28 +27,3 @@ alias wink='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
 alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
 
 alias dnd='(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)'
-
-
-# Functions
-function gstatus() {
-	for dir in ~/repos/*; do
-		if [ -d "$dir" ]; then
-			echo $(basename "$dir")
-			(cd "$dir" && git status)
-			echo "========================================================================"
-		fi
-	done
-}
-
-function duu() {
-	if [ $# -eq 0 ]; then
-		target="./*"
-	else
-		target="$@"
-	fi
-	for file in $target; do
-		echo $(basename "$file")
-		du --total --human-readable "$file"  | grep total
-		echo ""
-	done
-}
