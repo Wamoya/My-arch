@@ -22,7 +22,7 @@ keymap.set("n", "<C-l>", "<C-w>l", { noremap = true, desc = "Go to right split" 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>",   { desc = "[T]ab [O]pen"         }) -- Open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "[T]ab [C]lose"        }) -- Close tab with
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>",     { desc = "[T]ab [N]ext"         }) -- Go to next tab
-keymap.set("n", "<leader>tk", "<cmd>tabp<CR>",     { desc = "[T]ab bac[K]"         }) -- Go to previous
+keymap.set("n", "<leader>tk", "<cmd>tabp<CR>",     { desc = "[T]ab [P]revious"     }) -- Go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "[T]ab current [F]ile" }) -- Open current file on a new tab
 
 
