@@ -19,3 +19,7 @@ alias grep='grep --color=auto'
 PS1="┌[%F{34}%n@%m%f %F{69}%~%f %T] %N"$'\n'"└─%# " #wtf
 
 source ~/.zsh_aliases
+
+
+# X-server stuff
+export LIBGL_ALWAYS_INDIRECT=1

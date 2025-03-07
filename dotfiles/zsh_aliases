@@ -17,6 +17,11 @@ alias ls='exa -g'
 alias tree='exa -T'
 alias treee='exa -TDL 2'
 
+alias wipconfig="powershell.exe ipconfig | tail -n 3 | head -n 1"
+alias winip="wipconfig"
+alias xlaunch="powershell.exe -Command '& \"C:\\Program Files\\VcXsrv\\xlaunch.exe\"'"
+alias xl="xlaunch"
+
 
 
 # Common directories
