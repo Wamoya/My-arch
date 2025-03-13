@@ -11,6 +11,8 @@ alias duu="~/repos/bash_scripts/duu.sh"
 
 alias gstatus="~/repos/bash_scripts/gstatus.sh"
 
+alias scraper="~/repos/bash_scripts/scraper.sh"
+
 
 # Command aliases
 alias ls='exa -g'
