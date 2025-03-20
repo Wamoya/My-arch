@@ -11,7 +11,7 @@ return {
             { '<leader>t',  group = '[T]ab'           },
             { '<leader>e',  group = 'File [E]xplorer' },
             { '<leader>o',  group = '[O]ptions'       },
-            { '<leader>on', group = '[O]ption [N]o'   },
+            --{ '<leader>on', group = '[O]ption [N]o'   },
             { '<leader>s',  group = '[S]earch'        },
             { '<leader>c',  group = '[C]olorcheme'    },
         }

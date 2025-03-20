@@ -30,9 +30,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "[T]ab current [F]il
 -- [[ Options ]]
 -- Toggle
 keymap.set("n", "<leader>ow", "<cmd>set wrap!<CR>", { desc = "[O]ption [W]rap" }) -- Toggle wrap
-
--- No
-keymap.set("n", "<leader>onh", "<cmd>nohlsearch<CR>", { desc = "[O]ption [N]o [H]ighlights" }) -- Clear highlights on search
+keymap.set("n", "<leader>oh", "<cmd>set hlsearch!<CR>", { desc = "[O]ption [H]ighlights on search" }) -- Clear highlights on search
 
 
 
@@ -42,7 +40,3 @@ keymap.set("n", "<leader>c2", "<cmd>colorscheme desert<CR>", { desc = "desert" }
 keymap.set("n", "<leader>c3", "<cmd>colorscheme evening<CR>", { desc = "evening" })
 keymap.set("n", "<leader>c4", "<cmd>colorscheme slate<CR>", { desc = "slate" })
 keymap.set("n", "<leader>c5", "<cmd>colorscheme sorbet<CR>", { desc = "sorbet" })
---desert
---evening
---slate
---sorbet
