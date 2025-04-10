@@ -14,6 +14,9 @@ compinit
 # Coloring aliases
 alias grep='grep --color=auto'
 
+# Other typical aliases
+alias ll='ls -la'
+
 # Prompt customization
 #PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ '
 PS1="┌[%F{34}%n@%m%f %F{69}%~%f %T] %N"$'\n'"└─%# " #wtf

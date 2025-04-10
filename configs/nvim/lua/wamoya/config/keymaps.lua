@@ -30,7 +30,8 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "[T]ab current [F]il
 -- [[ Options ]]
 -- Toggle
 keymap.set("n", "<leader>ow", "<cmd>set wrap!<CR>", { desc = "[O]ption [W]rap" }) -- Toggle wrap
-keymap.set("n", "<leader>oh", "<cmd>set hlsearch!<CR>", { desc = "[O]ption [H]ighlights on search" }) -- Clear highlights on search
+--keymap.set("n", "<leader>oh", "<cmd>nohlsearch<CR>", { desc = "[O]ption Remove [H]ighlights on search" }) -- Clear highlights on search
+keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "[O]ption Remove [H]ighlights on search" }) -- Clear highlights on search
 
 
 

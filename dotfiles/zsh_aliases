@@ -15,11 +15,11 @@ alias scraper="~/repos/bash_scripts/scraper.sh"
 
 
 # Command aliases
-alias ls='exa -g'
+alias ls='exa --group'
 alias tree='exa -T'
 alias treee='exa -TDL 2'
 
-alias wipconfig="powershell.exe ipconfig | tail -n 8 | head -n 1"
+alias wipconfig="powershell.exe ipconfig | tail -n 10"
 alias winip="wipconfig"
 alias xlaunch="powershell.exe -Command '& \"C:\\Program Files\\VcXsrv\\xlaunch.exe\"'"
 alias xl="xlaunch"
