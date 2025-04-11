@@ -13,6 +13,8 @@ alias gstatus="~/repos/bash_scripts/gstatus.sh"
 
 alias scraper="~/repos/bash_scripts/scraper.sh"
 
+alias mvs="msv && mv IMG_* System/Assets/"
+
 
 # Command aliases
 alias ls='exa --group'
@@ -34,3 +36,6 @@ alias wink='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
 alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
 
 alias dnd='(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)'
+
+# Handy files
+alias al="nvim ~/.zsh_aliases"
