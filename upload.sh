@@ -15,5 +15,5 @@ sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.bash_aliases > ~/repos/My-ar
 # .zshrc
 cp ~/.zshrc ~/repos/My-arch/dotfiles/zshrc
 
-# .zsh_history
+# .zsh_aliases
 sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.zsh_aliases > ~/repos/My-arch/dotfiles/zsh_aliases
