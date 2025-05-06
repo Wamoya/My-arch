@@ -47,3 +47,14 @@ opt.scrolloff = 10
 opt.termguicolors = true -- Enable terminal colors
 opt.background = "dark"  -- Enable dark mode by default for any colorsheme
 opt.signcolumn = "yes"   -- Reserve space for the sign column
+
+-- [[ Basic autocommands ]]
+-- Highlight when yanking text.
+vim.api.nvim_create_autocmd("TextYankPost", {
+    desc = "Highlight when yanking text",
+    group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+    callback = function()
+        vim.highlight.on_yank()
+    end
+})
+

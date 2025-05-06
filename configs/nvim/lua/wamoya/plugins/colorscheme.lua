@@ -30,5 +30,10 @@ return {
             --vim.cmd 'highlight TabLine guibg=NONE ctermbg=NONE'
             --vim.cmd 'highlight TabLineFill guibg=NONE ctermbg=NONE'
         end,
-    }
+    },
+--    {
+--        "catppuccin/nvim",
+--        name = "catpuccin",
+--        priority = 1000
+--    }
 }
