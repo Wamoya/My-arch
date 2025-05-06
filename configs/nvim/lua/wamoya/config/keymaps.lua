@@ -7,10 +7,10 @@ local keymap = vim.keymap
 
 -- [[ Window management ]]
 -- Manage splits
---keymap.set("n", "<leader>sv", "<C-w>v",         { desc = "Split vertically" })          -- Split vertically
---keymap.set("n", "<leader>sh", "<C-w>s",         { desc = "Split horizontally" })        -- Split horizontally
---keymap.set("n", "<leader>se", "<C-w>=",         { desc = "Reset size for all splits" }) -- Reset the size of all splits
---keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })       -- Close split with
+--keymap.set("n", "<leader>wv", "<C-w>v",         { desc = "Split vertically" })          -- Split vertically
+--keymap.set("n", "<leader>wh", "<C-w>s",         { desc = "Split horizontally" })        -- Split horizontally
+--keymap.set("n", "<leader>we", "<C-w>=",         { desc = "Reset size for all splits" }) -- Reset the size of all splits
+--keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })       -- Close split with
 
 -- Make split navigation easier with CTRL+<hjkl>
 keymap.set("n", "<C-h>", "<C-w>h", { noremap = true, desc = "Go to left split"  }) -- Focus on left split
@@ -41,3 +41,23 @@ keymap.set("n", "<leader>c2", "<cmd>colorscheme desert<CR>",           { desc = 
 keymap.set("n", "<leader>c3", "<cmd>colorscheme evening<CR>",          { desc = "evening" })
 keymap.set("n", "<leader>c4", "<cmd>colorscheme slate<CR>",            { desc = "slate" })
 keymap.set("n", "<leader>c5", "<cmd>colorscheme sorbet<CR>",           { desc = "sorbet" })
+
+
+-- [[ Terminal ]] See plugins/toggleterm.lua
+-- Manage terminals
+keymap.set("n", "<leader>ñ", "<cmd>:ToggleTerm size=10 dir=~/Desktop direction=float name=desktop<CR>", { desc = "Toggle terminal" })
+
+-- Move between terminals same way as between splits
+-- if you only want these mappings for toggle term use term://*toggleterm#* instead
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+function _G.set_terminal_keymaps()
+  local opts = {buffer = 0}
+  keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+  keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+  keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+  keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+  keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+  keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+  keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
+end
+

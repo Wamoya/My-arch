@@ -16,3 +16,5 @@ ripgrep
 chafa
 luarocks
 fd
+lua-language-server
+pyright

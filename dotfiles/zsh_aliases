@@ -26,6 +26,8 @@ alias winip="wipconfig"
 alias xlaunch="powershell.exe -Command '& \"C:\\Program Files\\VcXsrv\\xlaunch.exe\"'"
 alias xl="xlaunch"
 
+alias python="python.exe"
+
 
 
 # Common directories
