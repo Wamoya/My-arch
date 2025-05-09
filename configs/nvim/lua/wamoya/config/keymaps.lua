@@ -22,7 +22,7 @@ keymap.set("n", "<C-l>", "<C-w>l", { noremap = true, desc = "Go to right split" 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>",   { desc = "[T]ab [O]pen"         }) -- Open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "[T]ab close"          }) -- Close tab with
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>",     { desc = "[T]ab [N]ext"         }) -- Go to next tab
-keymap.set("n", "<leader>tk", "<cmd>tabp<CR>",     { desc = "[T]ab previous"       }) -- Go to previous tab
+keymap.set("n", "<leader>tp", "<cmd>tabp<CR>",     { desc = "[T]ab [P]revious"     }) -- Go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "[T]ab current [F]ile" }) -- Open current file on a new tab
 
 
@@ -45,18 +45,19 @@ keymap.set("n", "<leader>c5", "<cmd>colorscheme sorbet<CR>",           { desc = 
 
 -- [[ Terminal ]] See plugins/toggleterm.lua
 -- Manage terminals
-keymap.set("n", "<leader>ñ", "<cmd>:ToggleTerm size=10 dir=~/Desktop direction=float name=desktop<CR>", { desc = "Toggle terminal" })
+keymap.set("n", "<leader>ñ", "<cmd>:ToggleTerm dir=. direction=float name=Terminal<CR>",      { desc = "Toggle terminal" })
+--keymap.set("n", "<leader>g", "<cmd>:TermExec dir=. direction=float name=Git cmd=lazygit<CR>", { desc = "Open lazygit in a floating terminal" })
 
 -- Move between terminals same way as between splits
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 function _G.set_terminal_keymaps()
-  local opts = {buffer = 0}
-  keymap.set('t', '<esc>', [[<C-\><C-n>]],        opts)
-  --keymap.set('t', 'jk',    [[<C-\><C-n>]],        opts)
-  keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-  keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-  keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
-  keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
-  keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]],   opts)
+    local opts = {buffer = 0}
+    keymap.set('t', '<esc>', [[<C-\><C-n>]],        opts)
+    --keymap.set('t', 'jk',    [[<C-\><C-n>]],        opts)
+    keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+    keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+    keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+    keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+    keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]],   opts)
 end

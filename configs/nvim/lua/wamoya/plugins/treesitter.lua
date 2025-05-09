@@ -19,6 +19,7 @@ return {
                 "markdown_inline",
                 "bash",
                 "lua",
+                "python"
             },
             incremental_selection = {
                 enable = true,
