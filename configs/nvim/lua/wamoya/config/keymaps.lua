@@ -61,3 +61,6 @@ function _G.set_terminal_keymaps()
     keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
     keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]],   opts)
 end
+
+-- [[ TODO comments ]]
+--keymap.set("n", "
