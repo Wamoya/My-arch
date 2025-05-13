@@ -26,7 +26,10 @@ alias winip="wipconfig"
 alias xlaunch="powershell.exe -Command '& \"C:\\Program Files\\VcXsrv\\xlaunch.exe\"'"
 alias xl="xlaunch"
 
-alias python="python.exe"
+alias wpython="python"
+alias python="python3"
+
+alias rc="source ~/.zshrc"
 
 
 
