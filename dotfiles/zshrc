@@ -26,3 +26,8 @@ source ~/.zsh_aliases
 
 # X-server stuff
 export LIBGL_ALWAYS_INDIRECT=1
+
+# Vi mode stuff
+bindkey -v
+bindkey "^?" backward-delete-char
+bindkey "^H" backward-delete-char

@@ -64,3 +64,9 @@ end
 
 -- [[ TODO comments ]]
 --keymap.set("n", "
+
+
+-- [[ Insert-mode keymaps ]]
+keymap.set("i", "(", "()<left>", { noremap = true, desc = "Close parenthesis automatically" })
+keymap.set("i", "{", "{}<left>", { noremap = true, desc = "Close brackets automatically" })
+keymap.set("i", "[", "[]<left>", { noremap = true, desc = "Close square brackets automatically" })

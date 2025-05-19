@@ -31,6 +31,8 @@ alias python="python3"
 
 alias rc="source ~/.zshrc"
 
+alias win="powershell.exe"
+
 
 
 # Common directories
