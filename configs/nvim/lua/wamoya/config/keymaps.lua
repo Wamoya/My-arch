@@ -70,3 +70,4 @@ end
 keymap.set("i", "(", "()<left>", { noremap = true, desc = "Close parenthesis automatically" })
 keymap.set("i", "{", "{}<left>", { noremap = true, desc = "Close brackets automatically" })
 keymap.set("i", "[", "[]<left>", { noremap = true, desc = "Close square brackets automatically" })
+keymap.set("n", "<leader>is", "i¯\\_(ツ)_/¯<Esc>", { noremap = true, desc = "[I]nsert [S]hrug" })
