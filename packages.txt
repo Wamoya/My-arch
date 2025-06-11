@@ -20,3 +20,5 @@ lua-language-server
 pyright
 python-matplotlib
 lazygit
+asm-lsp
+termdown

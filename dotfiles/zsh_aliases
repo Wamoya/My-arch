@@ -17,9 +17,9 @@ alias mvs="msv && mv IMG_* System/Assets/"
 
 
 # Command aliases
-alias ls='exa --group'
-alias tree='exa -T'
-alias treee='exa -TDL 2'
+alias ls="exa --group"
+alias tree="exa -T"
+alias treee="exa -TDL 2"
 
 alias wipconfig="powershell.exe ipconfig | tail -n 10"
 alias winip="wipconfig"
@@ -36,13 +36,13 @@ alias win="powershell.exe"
 
 
 # Common directories
-alias winu='cd /mnt/c/Users/{{WIN_USER}}/'
-alias wind='cd /mnt/c/Users/{{WIN_USER}}/Downloads/'
-alias wink='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
+alias winu="cd /mnt/c/Users/{{WIN_USER}}/"
+alias wind="cd /mnt/c/Users/{{WIN_USER}}/Downloads/"
+alias wink="cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/"
 
-alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
+alias msv="cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/"
 
-alias dnd='(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)'
+alias dnd="(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)"
 
 # Handy files
 alias al="nvim ~/.zsh_aliases"

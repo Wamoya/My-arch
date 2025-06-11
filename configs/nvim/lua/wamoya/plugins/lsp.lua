@@ -15,8 +15,9 @@ return {
             },
         },
         config = function()
-            require("lspconfig").lua_ls.setup {}
-            require("lspconfig").pyright.setup{}
+            require("lspconfig").lua_ls.setup  {}
+            require("lspconfig").pyright.setup {}
+            require("lspconfig").asm_lsp.setup {}
         end,
     }
 }
