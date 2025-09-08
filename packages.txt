@@ -22,3 +22,4 @@ python-matplotlib
 lazygit
 asm-lsp
 termdown
+pv

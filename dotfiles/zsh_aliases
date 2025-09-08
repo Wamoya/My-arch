@@ -33,6 +33,8 @@ alias rc="source ~/.zshrc"
 
 alias win="powershell.exe"
 
+alias wopen="explorer.exe"
+
 
 
 # Common directories
