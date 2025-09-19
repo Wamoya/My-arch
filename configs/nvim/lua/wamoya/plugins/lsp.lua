@@ -15,9 +15,13 @@ return {
             },
         },
         config = function()
-            require("lspconfig").lua_ls.setup  {}
-            require("lspconfig").pyright.setup {}
-            require("lspconfig").asm_lsp.setup {}
+            -- require("lspconfig").lua_ls.setup  {}
+            -- require("lspconfig").pyright.setup {}
+            -- require("lspconfig").asm_lsp.setup {}
+
+            vim.lsp.config("lua_ls", {})
+            vim.lsp.config("pyright", {})
+            vim.lsp.config("asm_lsp", {})
         end,
     }
 }

@@ -14,6 +14,7 @@ return {
             --{ '<leader>on', group = '[O]ption [N]o'   },
             { '<leader>s',  group = '[S]earch'        },
             { '<leader>c',  group = '[C]olorcheme'    },
+            { '<leader>i',  group = '[I]nsert'        },
         }
     }
 }

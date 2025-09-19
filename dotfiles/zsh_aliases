@@ -35,6 +35,8 @@ alias win="powershell.exe"
 
 alias wopen="explorer.exe"
 
+alias nvimdiff="nvim -d"
+
 
 
 # Common directories
