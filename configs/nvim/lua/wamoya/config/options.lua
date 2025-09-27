@@ -34,8 +34,8 @@ opt.clipboard="unnamedplus"
 
 
 -- [[ Window management ]]
-opt.splitright = true -- Split verically to the right
-opt.splitbelow = true -- Split horizontally to the bottom
+opt.splitright = true -- Split vertically to the right by default
+opt.splitbelow = true -- Split horizontally down by default
 
 
 -- [[ Movement ]]

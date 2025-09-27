@@ -62,6 +62,29 @@ function _G.set_terminal_keymaps()
     keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]],   opts)
 end
 
+-- [[ Competitive programming ]]
+-- Compile and execute c++ program on floating terminal
+vim.keymap.set("n", "<leader>mr", function()
+    local Terminal = require("toggleterm.terminal").Terminal
+
+    local file = vim.fn.expand("%")
+    local outfile = vim.fn.expand("%:r")
+
+    local term = Terminal:new({
+        display_name = "g++ -std=c++17 -O2 -Wall -Wextra " .. file .. " -o " .. outfile .. " && ./" .. outfile,
+        cmd = "g++ -std=c++17 -O2 -Wall -Wextra " .. file .. " -o " .. outfile .. " && ./" .. outfile,
+        direction = "float",
+        close_on_exit = false,
+        float_opts = { border = "rounded" },
+    })
+
+    term:toggle()
+end, { desc = "[M]ake [R]un C++" })
+
+
+
+
+
 -- [[ TODO comments ]]
 --keymap.set("n", "
 

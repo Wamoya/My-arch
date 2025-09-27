@@ -48,5 +48,7 @@ alias msv="cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuper
 
 alias dnd="(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)"
 
+alias cco="cd ~/ccompetitive/"
+
 # Handy files
 alias al="nvim ~/.zsh_aliases"
