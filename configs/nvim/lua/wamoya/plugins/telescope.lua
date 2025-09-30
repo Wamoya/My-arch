@@ -43,7 +43,7 @@ return {
         local previewers = require('telescope.previewers')
 
         local function choose_template()
-            local templates_path = vim.fn.stdpath("config") .. "/templates/cpp/"
+            local templates_path = vim.fn.stdpath("config") .. "/snippets/"
             
             pickers.new({}, {
                 prompt_title = "Choose a template",

@@ -23,3 +23,6 @@ asm-lsp
 termdown
 pv
 clang
+tealdeer
+shellcheck
+# Install ghcup through curl (see Haskell's official web page)

@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Nvim config
-cp --recursive ~/.config/nvim ~/repos/My-arch/configs/
+cp --recursive ~/.config/nvim ~/repos/my-arch/configs/
 
 # Package list
-cp ~/packages.txt ~/repos/My-arch/
+cp ~/packages.txt ~/repos/my-arch/
 
 # .bashrc
-cp ~/.bashrc ~/repos/My-arch/dotfiles/bashrc
+cp ~/.bashrc ~/repos/my-arch/dotfiles/bashrc
 
 # .bash_aliases
-sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.bash_aliases > ~/repos/My-arch/dotfiles/bash_aliases
+sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.bash_aliases > ~/repos/my-arch/dotfiles/bash_aliases
 
 # .zshrc
-cp ~/.zshrc ~/repos/My-arch/dotfiles/zshrc
+cp ~/.zshrc ~/repos/my-arch/dotfiles/zshrc
 
 # .zsh_aliases
-sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.zsh_aliases > ~/repos/My-arch/dotfiles/zsh_aliases
+sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.zsh_aliases > ~/repos/my-arch/dotfiles/zsh_aliases

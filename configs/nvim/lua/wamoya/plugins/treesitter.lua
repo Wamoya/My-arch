@@ -1,5 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    lazy = false,
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     branch = "master",
@@ -20,7 +21,9 @@ return {
                 "markdown_inline",
                 "bash",
                 "lua",
-                "python"
+                "python",
+                "cpp",
+                "haskell"
             },
             incremental_selection = {
                 enable = true,

@@ -27,7 +27,7 @@ return {
         dependencies = {
             {
                 "folke/lazydev.nvim",
-                ft = { "lua", "python", "c", "cpp" },
+                ft = { "lua", "python", "c", "cpp", "lua", "haskell" },
                 opts = {
                     library = {
                         -- See the configuration section for details
@@ -43,12 +43,14 @@ return {
             vim.lsp.config("pyright", {})
             vim.lsp.config("asm_lsp", {})
             vim.lsp.config("clangd", {})
+            vim.lsp.config("hls", {})
 
             -- Activate servers
             vim.lsp.enable("lua_ls")
             vim.lsp.enable("pyright")
             vim.lsp.enable("asm_lsp")
             vim.lsp.enable("clangd")
+            vim.lsp.enable("hls")
         end,
     },
 }

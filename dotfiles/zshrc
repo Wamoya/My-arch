@@ -31,3 +31,5 @@ export LIBGL_ALWAYS_INDIRECT=1
 bindkey -v
 bindkey "^?" backward-delete-char
 bindkey "^H" backward-delete-char
+
+[ -f "/home/wamoya/.ghcup/env" ] && . "/home/wamoya/.ghcup/env" # ghcup-env
