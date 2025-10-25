@@ -9,7 +9,7 @@ alias opn="~/repos/bash_scripts/opn.sh"
 
 alias duu="~/repos/bash_scripts/duu.sh"
 
-alias gstatus="~/repos/bash_scripts/gstatus.sh"
+alias gstatus="~/repos/bash_scripts/gstatus2.sh"
 
 alias scraper="~/repos/bash_scripts/scraper.sh"
 
@@ -36,6 +36,8 @@ alias win="powershell.exe"
 alias wopen="explorer.exe"
 
 alias sc="shellcheck"
+
+alias cmatrix="cmatrix -ab"
 
 
 

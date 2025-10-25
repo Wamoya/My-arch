@@ -45,7 +45,10 @@ keymap.set("n", "<leader>c5", "<cmd>colorscheme sorbet<CR>",           { desc = 
 
 -- [[ Terminal ]] See plugins/toggleterm.lua
 -- Manage terminals
-keymap.set("n", "<leader>ñ", "<cmd>:ToggleTerm dir=. direction=float name=Terminal<CR>",      { desc = "Toggle terminal" })
+keymap.set("n", "<leader>ñf", "<cmd>:ToggleTerm direction=float name=TerminalF<CR>",              { desc = "Terminal [F]loat" })
+keymap.set("n", "<leader>ñh", "<cmd>:ToggleTerm direction=horizontal name=TerminalH<CR>",         { desc = "Terminal [H]orizontal" })
+keymap.set("n", "<leader>ñv", "<cmd>:ToggleTerm direction=vertical name=TerminalV size=70<CR>",   { desc = "Terminal [V]ertical" })
+keymap.set("n", "<leader>ñt", "<cmd>:ToggleTerm direction=tab name=TerminalT<CR>",   { desc = "Terminal [V]ertical" })
 --keymap.set("n", "<leader>g", "<cmd>:TermExec dir=. direction=float name=Git cmd=lazygit<CR>", { desc = "Open lazygit in a floating terminal" })
 
 -- Move between terminals same way as between splits

@@ -26,3 +26,7 @@ clang
 tealdeer
 shellcheck
 # Install ghcup through curl (see Haskell's official web page)
+bsd-games
+man-db
+man-pages-es
+cmatrix

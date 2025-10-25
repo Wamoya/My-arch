@@ -25,7 +25,7 @@ return {
         })
 
         telescope.load_extension("fzf")
-        
+
         -- Keymaps
 
         local keymap = vim.keymap
@@ -35,6 +35,7 @@ return {
         keymap.set("n", "<leader>sk", builtin.keymaps,                                                     { desc = "[S]earch [K]eymaps"      })
         keymap.set("n", "<leader>ss", "<cmd>Telescope grep_string<CR>",                                    { desc = "[S]earch [S]tring"       })
         keymap.set("n", "<leader>st", "<cmd>TodoTelescope<CR>",                                            { desc = "[S]earch [T]ODOs"        })
+        keymap.set("n", "<leader>sb", builtin.buffers,                                                     { desc = "[S]earch [B]uffers"      })
 
             end,
 }

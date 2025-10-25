@@ -12,6 +12,7 @@ return {
             { '<leader>d',  group = '[D]iagnostic'    },
             { '<leader>e',  group = 'File [E]xplorer' },
             { '<leader>i',  group = '[I]nsert'        },
+            { '<leader>ñ',  group = 'Terminal'        },
             { '<leader>o',  group = '[O]ptions'       },
             { '<leader>s',  group = '[S]earch'        },
             { '<leader>t',  group = '[T]ab'           },

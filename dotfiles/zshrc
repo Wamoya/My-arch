@@ -33,3 +33,5 @@ bindkey "^?" backward-delete-char
 bindkey "^H" backward-delete-char
 
 [ -f "/home/wamoya/.ghcup/env" ] && . "/home/wamoya/.ghcup/env" # ghcup-env
+
+export LANG="es_ES.UTF-8"
