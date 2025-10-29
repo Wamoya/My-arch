@@ -18,8 +18,8 @@ alias grep='grep --color=auto'
 alias ll='ls -la --git'
 
 # Prompt customization
-#PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ '
-PS1="┌[%F{34}%n@%m%f %F{69}%~%f %T] %N"$'\n'"└─%# " #wtf
+#PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ ' # wtf
+export PS1="┌[%F{34}%n@%m%f %F{69}%~%f %T] (%j) %N"$'\n'"└─%# "
 
 source ~/.zsh_aliases
 
@@ -32,6 +32,8 @@ bindkey -v
 bindkey "^?" backward-delete-char
 bindkey "^H" backward-delete-char
 
-[ -f "/home/wamoya/.ghcup/env" ] && . "/home/wamoya/.ghcup/env" # ghcup-env
+[ -f "/home/wamoya/.ghcup/env" ] && source "/home/wamoya/.ghcup/env" # ghcup-env
 
 export LANG="es_ES.UTF-8"
+
+echo "zsh"

@@ -52,5 +52,7 @@ alias dnd="(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySupe
 
 alias cco="cd ~/ccompetitive/"
 
+alias repos="cd ~/repos/"
+
 # Handy files
 alias al="nvim ~/.zsh_aliases"

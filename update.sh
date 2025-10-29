@@ -7,7 +7,7 @@ cp --recursive ~/.config/nvim ~/repos/my-arch/configs/
 cp ~/packages.txt ~/repos/my-arch/
 
 # .bashrc
-cp ~/.bashrc ~/repos/my-arch/dotfiles/bashrc
+sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.bashrc > ~/repos/my-arch/dotfiles/bashrc
 
 # .bash_aliases
 sed -E 's|(/mnt/c/Users/)[^/]+|\1{{WIN_USER}}|g' ~/.bash_aliases > ~/repos/my-arch/dotfiles/bash_aliases

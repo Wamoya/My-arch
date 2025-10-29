@@ -5,12 +5,24 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Coloring aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
 # Prompt customization
-PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A]\n└─\$ '
+export PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A] ($(jobs | wc -l))\n└─\$ '
+
+# Vi mode
+set -o vi
+bind -m vi-insert '"\C-l": clear-screen'
+
+# Useful variables
+WINU='/mnt/c/Users/{{WIN_USER}}/'
+WIND='/mnt/c/Users/{{WIN_USER}}/Downloads/'
+WINK='/mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
+
+
+# X-server stuff
+export LIBGL_ALWAYS_INDIRECT=1
+
+# ghcup-env
+[ -f "/home/wamoya/.ghcup/env" ] && source "/home/wamoya/.ghcup/env"
 
 # Load custom aliases
 source ~/.bash_aliases

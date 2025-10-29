@@ -20,7 +20,7 @@ lua-language-server
 pyright
 python-matplotlib
 asm-lsp
-termdown
+#termdown
 pv
 clang
 tealdeer

@@ -1,4 +1,4 @@
-# Script shortcuts
+#-- Script shortcuts --#
 alias backup='~/repos/bash_scripts/backup.sh'
 alias bu='backup'
 
@@ -9,21 +9,46 @@ alias opn="~/repos/bash_scripts/opn.sh"
 
 alias duu="~/repos/bash_scripts/duu.sh"
 
-alias gstatus="~/repos/bash_scripts/gstatus.sh"
+alias gstatus="~/repos/bash_scripts/gstatus2.sh"
+
+alias scraper="~/repos/bash_scripts/scraper.sh"
 
 
-# Command aliases
+
+#-- Command aliases --#
 alias ls='exa -g'
+alias ll='ls -la --git'
+alias grep='grep --color=auto'
 alias tree='exa -T'
 alias treee='exa -TDL 2'
+alias sc="shellcheck"
+alias cmatrix="cmatrix -ab"
+
+alias wipconfig="powershell.exe ipconfig | tail -n 10"
+alias winip="wipconfig"
+#alias xlaunch="powershell.exe -Command '& \"C:\\Program Files\\VcXsrv\\xlaunch.exe\"'"
+#alias xl="xlaunch"
+
+alias python="python3"
+
+alias rc="source ~/.bashrc"
+
+alias win="powershell.exe"
+
+alias wopen="explorer.exe"
 
 
 
-# Common directories
-alias winu='cd /mnt/c/Users/{{WIN_USER}}/'
-alias wind='cd /mnt/c/Users/{{WIN_USER}}/Downloads/'
-alias wink='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
+#-- Common directories --#
+alias winu='cd $WINU'
+alias wind='cd $WIND'
+alias wink='cd $WINK'
 
 alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
 
 alias dnd='(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim)'
+
+alias repos="cd ~/repos/"
+
+#-- Common files --#
+alias al="nvim ~/.zsh_aliases"
