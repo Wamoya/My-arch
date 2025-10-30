@@ -6,7 +6,21 @@
 [[ $- != *i* ]] && return
 
 # Prompt customization
-export PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A] ($(jobs | wc -l))\n└─\$ '
+#export PS1='┌[\e[92m\u@\h \e[94m\w\e[39m \A] ($(jobs | wc -l))\n└─\$ '
+is_ssh() {
+    if [ -n "$SSH_CLIENT" ]; then
+        echo -e "\e[90m@\e[91m$HOSTNAME"
+    fi
+}
+is_root() {
+    if [ "$UID" -eq 0 ]; then
+        echo -e "\e[91m"
+    else
+        echo -e "\e[93m"
+    fi
+}
+
+export PS1='  $(is_root)\u$(is_ssh)\e[39m \e[94m\w\e[39m\n> '
 
 # Vi mode
 set -o vi

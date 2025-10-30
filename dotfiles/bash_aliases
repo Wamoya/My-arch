@@ -23,6 +23,7 @@ alias tree='exa -T'
 alias treee='exa -TDL 2'
 alias sc="shellcheck"
 alias cmatrix="cmatrix -ab"
+alias ff="fastfetch"
 
 alias wipconfig="powershell.exe ipconfig | tail -n 10"
 alias winip="wipconfig"
@@ -51,4 +52,4 @@ alias dnd='(cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySupe
 alias repos="cd ~/repos/"
 
 #-- Common files --#
-alias al="nvim ~/.zsh_aliases"
+alias al="nvim ~/.bash_aliases"
