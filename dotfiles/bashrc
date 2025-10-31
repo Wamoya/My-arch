@@ -12,19 +12,29 @@ is_ssh() {
         echo -e "\e[90m@\e[91m$HOSTNAME"
     fi
 }
-is_root() {
+is_root_color() {
     if [ "$UID" -eq 0 ]; then
         echo -e "\e[91m"
     else
         echo -e "\e[93m"
     fi
 }
+is_root_prompt() {
+    if [ "$UID" -eq 0 ]; then
+        echo "# "
+    else
+        echo "> "
+    fi
+}
 
-export PS1='  $(is_root)\u$(is_ssh)\e[39m \e[94m\w\e[39m\n> '
+export PS1='  $(is_root_color)\u$(is_ssh)\e[39m \e[94m\w\e[39m\n$(is_root_prompt)'
 
 # Vi mode
 set -o vi
 bind -m vi-insert '"\C-l": clear-screen'
+
+# fzf
+source /usr/share/fzf/key-bindings.bash
 
 # Useful variables
 WINU='/mnt/c/Users/{{WIN_USER}}/'
