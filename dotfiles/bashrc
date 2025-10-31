@@ -35,6 +35,7 @@ bind -m vi-insert '"\C-l": clear-screen'
 
 # fzf
 source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
 
 # Useful variables
 WINU='/mnt/c/Users/{{WIN_USER}}/'
