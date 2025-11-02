@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Nvim config
+rm -r ~/repos/my-arch/configs/nvim/
 cp --recursive ~/.config/nvim ~/repos/my-arch/configs/
 
 # Package list

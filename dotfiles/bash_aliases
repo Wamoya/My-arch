@@ -45,6 +45,10 @@ alias wopen="explorer.exe"
 
 
 #-- Common directories --#
+WINU='/mnt/c/Users/{{WIN_USER}}/'
+WIND='/mnt/c/Users/{{WIN_USER}}/Downloads/'
+WINK='/mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
+
 alias winu='cd $WINU'
 alias wind='cd $WIND'
 alias wink='cd $WINK'
@@ -57,3 +61,5 @@ alias repos="cd ~/repos/"
 
 #-- Common files --#
 alias al="nvim ~/.bash_aliases"
+alias nrc="nvim ~/.bashrc"
+alias todo="bat ~/TODO.md"

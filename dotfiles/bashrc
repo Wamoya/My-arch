@@ -1,4 +1,4 @@
-#
+#!/bin/bash
 # ~/.bashrc
 #
 
@@ -26,8 +26,14 @@ is_root_prompt() {
         echo "> "
     fi
 }
+number_jobs() {
+    j=$(jobs | wc -l)
+    if [ $j -ge 1 ]; then
+        echo "${j} "
+    fi
+}
 
-export PS1='  $(is_root_color)\u$(is_ssh)\e[39m \e[94m\w\e[39m\n$(is_root_prompt)'
+export PS1='  $(is_root_color)\u$(is_ssh)\e[39m $(number_jobs)\e[94m\w\e[39m\n$(is_root_prompt)'
 
 # Vi mode
 set -o vi
@@ -36,11 +42,6 @@ bind -m vi-insert '"\C-l": clear-screen'
 # fzf
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
-
-# Useful variables
-WINU='/mnt/c/Users/{{WIN_USER}}/'
-WIND='/mnt/c/Users/{{WIN_USER}}/Downloads/'
-WINK='/mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/'
 
 
 # X-server stuff
@@ -51,3 +52,8 @@ export LIBGL_ALWAYS_INDIRECT=1
 
 # Load custom aliases
 source ~/.bash_aliases
+
+
+# Login routine
+pokeget random --hide-name
+cat ~/TODO.md

@@ -37,10 +37,11 @@ keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Remove highlights on s
 
 -- [[ Colorscheme ]]
 keymap.set("n", "<leader>c1", "<cmd>colorscheme tokyonight-night<CR>", { desc = "tokyonight-night" })
-keymap.set("n", "<leader>c2", "<cmd>colorscheme desert<CR>",           { desc = "desert"           })
-keymap.set("n", "<leader>c3", "<cmd>colorscheme evening<CR>",          { desc = "evening"          })
-keymap.set("n", "<leader>c4", "<cmd>colorscheme slate<CR>",            { desc = "slate"            })
-keymap.set("n", "<leader>c5", "<cmd>colorscheme sorbet<CR>",           { desc = "sorbet"           })
+keymap.set("n", "<leader>c2", "<cmd>colorscheme tokyonight-day<CR>",   { desc = "tokyonight-day"   })
+keymap.set("n", "<leader>c3", "<cmd>colorscheme desert<CR>",           { desc = "desert"           })
+keymap.set("n", "<leader>c4", "<cmd>colorscheme evening<CR>",          { desc = "evening"          })
+keymap.set("n", "<leader>c5", "<cmd>colorscheme slate<CR>",            { desc = "slate"            })
+keymap.set("n", "<leader>c6", "<cmd>colorscheme sorbet<CR>",           { desc = "sorbet"           })
 
 
 -- [[ Terminal ]] See plugins/toggleterm.lua
