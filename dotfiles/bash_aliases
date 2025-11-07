@@ -36,8 +36,6 @@ alias winip="wipconfig"
 
 alias python="python3"
 
-alias rc="source ~/.bashrc"
-
 alias win="powershell.exe"
 
 alias wopen="explorer.exe"
@@ -54,6 +52,7 @@ alias wind='cd $WIND'
 alias wink='cd $WINK'
 
 alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
+alias mvs='msv && mv IMG_* System/Assets/'
 
 alias dnd='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim'
 
@@ -61,5 +60,7 @@ alias repos="cd ~/repos/"
 
 #-- Common files --#
 alias al="nvim ~/.bash_aliases"
+alias rc="source ~/.bashrc"
 alias nrc="nvim ~/.bashrc"
 alias todo="bat ~/TODO.md"
+alias ntodo="nvim ~/TODO.md"
