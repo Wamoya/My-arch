@@ -17,6 +17,8 @@ alias scraper="~/repos/bash_scripts/scraper.sh"
 alias ufiles="~/repos/my-arch/update.sh"
 alias pfiles="~/repos/my-arch/push.sh"
 
+alias sortnotes="~/repos/bash_scripts/sort-class-notes.sh"
+
 
 
 #-- Command aliases --#
@@ -52,7 +54,7 @@ alias wind='cd $WIND'
 alias wink='cd $WINK'
 
 alias msv='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/'
-alias mvs='msv && mv IMG_* System/Assets/'
+alias mvs='msv && mv -i IMG_* System/Assets/'
 
 alias dnd='cd /mnt/c/Users/{{WIN_USER}}/OneDrive/Desktop/Obsidian_vaults/MySuperVault/Efforts/DnD && nvim'
 
